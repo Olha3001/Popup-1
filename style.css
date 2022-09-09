@@ -3,39 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background: #e6e6fa;
 }
-.header{
+.header {
   background: linear-gradient(#e6e6fa, #d8bfd8);
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: space-between;
   padding: 24px 60px 24px 900px;
-
 }
 /* спрятали чекбокс */
 .input-check,
-.input-more
-{
+.input-more {
   appearance: none;
   -webkit-appearance: none;
   position: absolute;
 }
 /* открытие при нажатии */
-.input-check:checked~.container,
-.input-more:checked~.bottom-container{
+.input-check:checked ~ .container,
+.input-more:checked ~ .bottom-container {
   display: block;
 }
 /* позиционирование контейнера меню */
-.container{
+.container {
   position: absolute;
   background-color: #e6e6fa;
   right: 100px;
@@ -77,7 +75,7 @@ a{
 
 .label-more {
   display: block;
-    width: 240px;
+  width: 240px;
   text-align: center;
   background-color: #d8bfd8;
   box-sizing: border-box;
@@ -89,7 +87,7 @@ a{
   box-shadow: 2px 2px 2px grey;
   cursor: pointer;
 }
-.bottom-container{
+.bottom-container {
   display: none;
   position: absolute;
 }
@@ -153,25 +151,33 @@ a{
   border: 1px solid #e6e6fa;
 }
 
-
 @media (max-width: 990px) {
   .nav-menu {
     padding-left: 600px;
-    padding-right: 100px
+    padding-right: 100px;
   }
 
   .container {
-    right: 100px
+    right: 100px;
   }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .nav-menu {
     padding-right: 50px;
-    padding-left: 450px
+    padding-left: 450px;
   }
 
   .container {
-    right: 50px
+    right: 50px;
+  }
+}
+@media (max-width: 479px) {
+  .nav-menu {
+    padding-right: 50px;
+    padding-left: 200px;
+  }
+  .container {
+    right: 40px;
   }
 }
