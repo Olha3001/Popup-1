@@ -181,3 +181,14 @@ a {
     right: 40px;
   }
 }
+@media (min-width: 414px) {
+  .nav-menu {
+    padding-right: 30px;
+    padding-left: 150px;
+  }
+
+  .container {
+    right: 40px;
+    width: auto;
+  }
+}
